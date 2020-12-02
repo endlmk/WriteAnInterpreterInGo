@@ -100,7 +100,7 @@ func TestReturnStatements(t *testing.T) {
 		}
 
 		stmt := program.Statements[0]
-		returnStmt, ok := stmt.(*ast.RetruenStatement)
+		returnStmt, ok := stmt.(*ast.ReturnStatement)
 		if !ok {
 			t.Fatalf("stmt not *ast.ReturnStatement. got=%T", stmt)
 		}

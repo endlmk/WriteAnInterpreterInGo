@@ -125,7 +125,7 @@ func (p *Parser) parseLetStatement() ast.Statement {
 }
 
 func (p *Parser) parseReturnStatement() ast.Statement {
-	stmt := &ast.RetruenStatement{Token: p.curToken}
+	stmt := &ast.ReturnStatement{Token: p.curToken}
 
 	p.nextToken()
 

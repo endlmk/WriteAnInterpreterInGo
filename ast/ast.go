@@ -68,14 +68,14 @@ func (ls *LetStatement) String() string {
 	return out.String()
 }
 
-type RetruenStatement struct {
+type ReturnStatement struct {
 	Token       token.Token // 'return' token
 	ReturnValue Expression
 }
 
-func (rs *RetruenStatement) statementNode()       {}
-func (rs *RetruenStatement) TokenLiteral() string { return rs.Token.Literal }
-func (rs *RetruenStatement) String() string {
+func (rs *ReturnStatement) statementNode()       {}
+func (rs *ReturnStatement) TokenLiteral() string { return rs.Token.Literal }
+func (rs *ReturnStatement) String() string {
 	var out bytes.Buffer
 
 	out.WriteString(rs.TokenLiteral() + " ")
